@@ -1,188 +1,165 @@
-# 🚀 User Management System (Industry-Level CRUD API)
+🚀 MERN User Management REST API
 
-A full-stack User Management application built using Node.js, Express, MongoDB, and React.
+A production-ready Full Stack User Management System built with the MERN stack (MongoDB, Express, React, Node.js).
 
-This project demonstrates a production-ready REST API with proper validation, error handling, and clean architecture.
+This project demonstrates a scalable RESTful API with proper validation, structured architecture, and clean error handling following industry standards.
 
----
+📌 Features
 
-## 📌 Features
+✅ Create User
 
-- ✅ Create User
-- ✅ Get All Users
-- ✅ Get User By ID
-- ✅ Update User (PUT - full update)
-- ✅ Delete User
-- ✅ Zod Validation
-- ✅ Proper HTTP Status Codes
-- ✅ Duplicate Email Handling (409)
-- ✅ Clean MVC Architecture
-- ✅ React Frontend Connected to API
+✅ Get All Users
 
----
+✅ Get User By ID
 
-## 🏗 Tech Stack
+✅ Update User (PUT – Full Update)
 
-### Backend
-- Node.js
-- Express.js
-- MongoDB
-- Mongoose
-- Zod (Validation)
-- dotenv
+✅ Delete User
 
-### Frontend
-- React.js
-- Axios
-- React Router DOM
+✅ Zod Schema Validation
 
----
+✅ Duplicate Email Handling (409 Conflict)
 
-## 📂 Project Structure
+✅ Proper HTTP Status Codes
 
-```
-project-root/
+✅ Clean MVC Architecture
+
+✅ React Frontend Integrated with API
+
+🏗 Tech Stack
+🔹 Backend
+
+Node.js
+
+Express.js
+
+MongoDB
+
+Mongoose
+
+Zod (Validation)
+
+dotenv
+
+🔹 Frontend
+
+React.js
+
+Axios
+
+React Router DOM
+
+Vite
+
+📂 Project Structure
+mern-user-management-rest-api/
 │
 ├── backend/
-|----|---src/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── schemas/
-│   ├─app.js
-│   └─index.js
+│   ├── src/
+│   │   ├── controllers/
+│   │   ├── models/
+│   │   ├── routes/
+│   │   ├── schemas/
+│   │
+│   ├── app.js
+│   └── index.js
 │
 ├── frontend/
 │   ├── src/
-│   ├── components/
+│   ├── public/
 │   └── App.jsx
 │
 └── README.md
-```
-
----
-
-## ⚙️ Installation Guide
-
-### 1️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/your-username/user-management-system.git
-cd user-management-system
-```
-
----
-
-## 🔧 Backend Setup
-
-### Install Dependencies
-
-```bash
+⚙️ Installation Guide
+1️⃣ Clone the Repository
+git clone https://github.com/sarbjotSingh08/mern-user-management-rest-api.git
+cd mern-user-management-rest-api
+🔧 Backend Setup
+Install Dependencies
 cd backend
 npm install
-```
-
-### Create `.env` File
-
-```
+Create .env File
 PORT=3002
 MONGO_URI=your_mongodb_connection_string
-```
-
-### Run Backend
-
-```bash
+Run Backend
 npm run dev
-```
 
-Server runs on:
-```
+Server runs at:
+
 http://localhost:3002
-```
-
----
-
-## 🎨 Frontend Setup
-
-```bash
+🎨 Frontend Setup
 cd frontend
 npm install
 npm run dev
-```
 
-Frontend runs on:
-```
+Frontend runs at:
+
 http://localhost:5173
-```
-
----
-
-## 📡 API Endpoints
-
-| Method | Endpoint | Description |
-|--------|----------|------------|
-| POST   | /api/users | Create User |
-| GET    | /api/users | Get All Users |
-| GET    | /api/users/:id | Get Single User |
-| PUT    | /api/users/:id | Full Update |
-| DELETE | /api/users/:id | Delete User |
-
----
-
-## 🧠 Validation Example
-
-```json
+📡 API Endpoints
+Method	Endpoint	Description
+POST	/api/users	Create User
+GET	/api/users	Get All Users
+GET	/api/users/:id	Get Single User
+PUT	/api/users/:id	Full Update
+DELETE	/api/users/:id	Delete User
+🧠 Validation Example
 {
   "name": "Sarbjot Singh",
   "age": 23,
   "email": "test@gmail.com"
 }
-```
 
-Validation is handled using **Zod schema** before database insertion.
+Validation is handled using Zod schema before database insertion.
 
----
+🚦 HTTP Status Codes Used
 
-## 🚦 HTTP Status Codes Used
+201 → Created
 
-- 201 → Created
-- 200 → Success
-- 204 → Deleted
-- 400 → Validation Error
-- 404 → Not Found
-- 409 → Duplicate Entry
-- 500 → Server Error
+200 → Success
 
----
+204 → Deleted
 
-## 🔥 Why This Project Is Production-Ready
+400 → Validation Error
 
-- Proper REST architecture
-- Clean controller separation
-- Error handling middleware
-- Async/Await
-- Schema validation
-- Professional response format
-- Industry standard HTTP codes
+404 → Not Found
 
----
+409 → Conflict (Duplicate Email)
 
-## 📌 Future Improvements
+500 → Server Error
 
-- Authentication (JWT)
-- Pagination
-- Filtering & Sorting
-- Role-based authorization
-- Deployment (Render / Vercel)
+🔥 Why This Project Is Production-Ready
 
----
+RESTful architecture
 
-## 👨‍💻 Author
+MVC folder structure
 
-**Sarbjot Singh Walia**
+Centralized error handling middleware
 
-Aspiring Full Stack Developer (MERN)
+Async/Await pattern
 
----
+Schema validation layer
 
-## ⭐ If you like this project, give it a star!
+Proper status codes
+
+Clean response structure
+
+📌 Future Improvements
+
+JWT Authentication
+
+Pagination
+
+Filtering & Sorting
+
+Role-Based Authorization
+
+Deployment (Render / Vercel)
+
+Docker Support
+
+👨‍💻 Author
+
+Sarbjot Singh Walia
+Aspiring Full Stack MERN Developer
+
+⭐ If you found this project helpful, consider giving it a star!
